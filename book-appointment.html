@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment - PawConnect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>PawConnect</h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="browse-pets.html">Browse Pets</a></li>
+                    <li><a href="pet-services.html">Pet Services</a></li>
+                    <li><a href="pet-care.html">Pet Care</a></li>
+                    <li><a href="ngo-donation.html">NGO Donation</a></li>
+                    <li>
+                        <select id="global-location-select" class="nav-select">
+                            <option value="">Select City</option>
+                            <option value="mumbai">Mumbai</option>
+                            <option value="delhi">Delhi</option>
+                            <option value="bangalore">Bangalore</option>
+                        </select>
+                    </li>
+                </ul>
+                <div class="nav-button">
+                    <a href="book-appointment.html" class="btn-appointment">Book an Appointment</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Book an Appointment</h1>
+                <p>Schedule services for your furry friend with our trusted pet care professionals.</p>
+            </div>
+        </section>
+
+        <section class="appointment-section">
+            <div class="container">
+                <div class="appointment-form-container">
+                    <form class="appointment-form" id="appointment-form">
+                        <div class="form-group">
+                            <label for="pet-name">Pet Name</label>
+                            <input type="text" id="pet-name" name="pet-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pet-type">Pet Type</label>
+                            <select id="pet-type" name="pet-type" required>
+                                <option value="">Select pet type</option>
+                                <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                                <option value="bird">Bird</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="service-type">Service Type</label>
+                            <select id="service-type" name="service-type" required>
+                                <option value="">Select service</option>
+                                <option value="grooming">Grooming</option>
+                                <option value="vet-checkup">Vet Checkup</option>
+                                <option value="vaccination">Vaccination</option>
+                                <option value="training">Training</option>
+                                <option value="boarding">Boarding</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointment-date">Preferred Date</label>
+                            <input type="date" id="appointment-date" name="appointment-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointment-time">Preferred Time</label>
+                            <select id="appointment-time" name="appointment-time" required>
+                                <option value="">Select time</option>
+                                <option value="9:00">9:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-name">Your Name</label>
+                            <input type="text" id="contact-name" name="contact-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-phone">Phone Number</label>
+                            <input type="tel" id="contact-phone" name="contact-phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email Address</label>
+                            <input type="email" id="contact-email" name="contact-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="special-requests">Special Requests or Notes</label>
+                            <textarea id="special-requests" name="special-requests" rows="4" placeholder="Any additional information about your pet or specific requirements..."></textarea>
+                        </div>
+                        <button type="submit">Submit Appointment Request</button>
+                    </form>
+                </div>
+
+                <div class="appointment-info">
+                    <h3>How It Works</h3>
+                    <ol>
+                        <li>Fill out the appointment form with your details and pet information.</li>
+                        <li>Our team will review your request and confirm availability.</li>
+                        <li>You'll receive a confirmation call or email within 24 hours.</li>
+                        <li>Arrive at the scheduled time with your pet for the service.</li>
+                    </ol>
+                    <p><em>Note: Appointment confirmations are subject to availability. We'll contact you if your preferred time slot is not available.</em></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 PawConnect. Made with ❤️ for pets and their families.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
